@@ -2,6 +2,8 @@ import React from "react";
 // import './App.css';
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Table from "./components/Table";
 
 
 export default function App() {
@@ -9,7 +11,10 @@ export default function App() {
     <div>
       <Navbar />
       <div>Filter goes here</div>
-      <div>dataTable goes here</div>
+      <div>
+        <Table />
+      </div>
+
       <Footer />
     </div>
   );
