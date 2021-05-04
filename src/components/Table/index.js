@@ -2,7 +2,8 @@ import React from "react";
 import "./style.css";
 
 
-function Table() {
+function Table(props) {
+    console.log(props.userData)
     return (
         <div>
             <table className="table table-striped table-sortable">
