@@ -7,21 +7,10 @@ import Table from "./components/Table";
 import API from "./utils/API";
 
 export default function App() {
-  const [userData, setUserData] = useState([]);
-  useEffect(() => {
-    (async function () {
-      const response = await API.getRandomEmployee();
-      setUserData(response.data.results);
-    })()
-  }, [])
+
   return (
     <div>
-      <Navbar />
-      <div>Filter goes here</div>
-      <div>
-        <Table userData={userData} />
-      </div>
-
+      <Table />
       <Footer />
     </div>
   );
