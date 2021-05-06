@@ -67,7 +67,7 @@ function Table() {
                         // console.log(person)
                         return (
                             <tr key={idx}>
-                                <td><img src="{person.picture.thumbnail}" /></td>
+                                <td><img src={person.picture.thumbnail} /></td>
                                 <td>{person.name.first}</td>
                                 <td>{person.name.last}</td>
                                 <td>{person.phone}</td>
