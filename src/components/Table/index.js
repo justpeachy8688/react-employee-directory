@@ -48,7 +48,7 @@ function Table() {
         })])
     }
     return (
-        <div>
+        <div className="body">
             <Navbar />
             <SearchForm handleFilter={handleFilter} />
             <table className="table table-striped table-sortable">
